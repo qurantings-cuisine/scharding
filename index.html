@@ -854,7 +854,7 @@
       var statusEl = document.getElementById('mpSubmitStatus');
       statusEl.className = 'mp-submit-status';
 
-      if (!BACKEND_WEBHOOK_URL || BACKEND_WEBHOOK_URL.indexOf('PASTE_YOUR') === 0) {
+      if (!BACKEND_WEBHOOK_URL || BACKEND_WEBHOOK_URL.indexOf('https://script.google.com/macros/s/AKfycbxJvrqBVmSkGYeQM5yTPQGORZZedQzs_O1ywJ-qX9JTJRugi551nH_mrTMApzaq6I-Ahg/exec') === 0) {
         statusEl.textContent = "Order submission isn't set up yet — please use Copy Order below instead.";
         statusEl.className = 'mp-submit-status is-error';
         return;
